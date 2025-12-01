@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:3000/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./The Divine Trader _ Radha-Krishna Protocol_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A daily routine and discipline tracker for traders inspired by the wisdom of Radha and Krishna. Balances market performance with spiritual equanimity.">
+    <title>The Divine Trader | Radha-Krishna Protocol</title>
+    <script src="./The Divine Trader _ Radha-Krishna Protocol_files/saved_resource"></script>
+    <link href="./The Divine Trader _ Radha-Krishna Protocol_files/css2" rel="stylesheet">
+    <!-- Favicon (Flute Icon) -->
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;%F0%9F%AA%88&lt;/text&gt;&lt;/svg&gt;">
+    <style>
+        :root {
+            --krishna-blue: #1e3a8a;
+            --radha-pink: #fce7f3;
+            --gold: #d97706;
+            --peacock-green: #0f766e;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fdfbf7;
+            color: #334155;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .divine-font {
+            font-family: 'Cinzel Decorative', cursive;
+        }
+        .lotus-gradient {
+            background: linear-gradient(135deg, #fdfbf7 0%, #fff1f2 100%);
+        }
+        .krishna-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+        .active-phase {
+            border-left: 4px solid #d97706;
+            background-color: #fffbeb;
+            transform: scale(1.02);
+            transition: all 0.5s ease;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e3a8a;
+            border-radius: 4px;
+        }
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        /* Checkbox Animation */
+        .checkbox-wrapper input:checked + div {
+            background-color: #0f766e;
+            border-color: #0f766e;
+        }
+        .checkbox-wrapper input:checked + div svg {
+            display: block;
+        }
+        /* Modal Transitions */
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+        body.modal-active {
+            overflow-x: hidden;
+            overflow-y: hidden !important;
+        }
+        /* Toast Notification */
+        .toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 16px;
+            position: fixed;
+            z-index: 100;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s, bottom 0.3s;
+        }
+        .toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.top-0{top:0px}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-5{margin-top:1.25rem;margin-bottom:1.25rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-20{margin-top:5rem}.mt-8{margin-top:2rem}.ml-2{margin-left:0.5rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-12{height:3rem}.h-24{height:6rem}.h-32{height:8rem}.h-4{height:1rem}.h-full{height:100%}.h-10{height:2.5rem}.h-3{height:0.75rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.max-h-64{max-height:16rem}.w-1{width:0.25rem}.w-1\/2{width:50%}.w-11\/12{width:91.666667%}.w-12{width:3rem}.w-32{width:8rem}.w-4{width:1rem}.w-full{width:100%}.w-10{width:2.5rem}.w-3{width:0.75rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-\[calc\(100\%-4rem\)\]{width:calc(100% - 4rem)}.max-w-2xl{max-width:42rem}.max-w-5xl{max-width:64rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-rotate-90{--tw-rotate:-90deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t-4{border-top-width:4px}.border-blue-800{--tw-border-opacity:1;border-color:rgb(30 64 175 / var(--tw-border-opacity, 1))}.border-indigo-600{--tw-border-opacity:1;border-color:rgb(79 70 229 / var(--tw-border-opacity, 1))}.border-pink-400{--tw-border-opacity:1;border-color:rgb(244 114 182 / var(--tw-border-opacity, 1))}.border-red-400{--tw-border-opacity:1;border-color:rgb(248 113 113 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-teal-600{--tw-border-opacity:1;border-color:rgb(13 148 136 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-yellow-200{--tw-border-opacity:1;border-color:rgb(254 240 138 / var(--tw-border-opacity, 1))}.border-yellow-500{--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-teal-700{--tw-bg-opacity:1;background-color:rgb(15 118 110 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-900{--tw-gradient-from:#1e3a8a var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 58 138 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-pink-500{--tw-gradient-to:rgb(236 72 153 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #ec4899 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-teal-500{--tw-gradient-to:rgb(20 184 166 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #14b8a6 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-yellow-500{--tw-gradient-to:#eab308 var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-3{padding-bottom:0.75rem}.pr-2{padding-right:0.5rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:0.025em}.tracking-widest{letter-spacing:0.1em}.tracking-wider{letter-spacing:0.05em}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.text-indigo-800{--tw-text-opacity:1;color:rgb(55 48 163 / var(--tw-text-opacity, 1))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129 / var(--tw-text-opacity, 1))}.text-pink-100{--tw-text-opacity:1;color:rgb(252 231 243 / var(--tw-text-opacity, 1))}.text-pink-700{--tw-text-opacity:1;color:rgb(190 24 93 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-100{--tw-text-opacity:1;color:rgb(254 249 195 / var(--tw-text-opacity, 1))}.text-yellow-200{--tw-text-opacity:1;color:rgb(254 240 138 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-yellow-700{--tw-text-opacity:1;color:rgb(161 98 7 / var(--tw-text-opacity, 1))}.text-yellow-800{--tw-text-opacity:1;color:rgb(133 77 14 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-pink-600{--tw-text-opacity:1;color:rgb(219 39 119 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-yellow-600{--tw-text-opacity:1;color:rgb(202 138 4 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.decoration-teal-500{-webkit-text-decoration-color:#14b8a6;text-decoration-color:#14b8a6}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-10{opacity:0.1}.opacity-50{opacity:0.5}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-300{transition-duration:300ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.before\:absolute::before{content:var(--tw-content);position:absolute}.before\:inset-0::before{content:var(--tw-content);inset:0px}.before\:ml-5::before{content:var(--tw-content);margin-left:1.25rem}.before\:h-full::before{content:var(--tw-content);height:100%}.before\:w-0\.5::before{content:var(--tw-content);width:0.125rem}.before\:-translate-x-px::before{content:var(--tw-content);--tw-translate-x:-1px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.before\:bg-gradient-to-b::before{content:var(--tw-content);background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.before\:from-transparent::before{content:var(--tw-content);--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.before\:via-slate-300::before{content:var(--tw-content);--tw-gradient-to:rgb(203 213 225 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #cbd5e1 var(--tw-gradient-via-position), var(--tw-gradient-to)}.before\:to-transparent::before{content:var(--tw-content);--tw-gradient-to:transparent var(--tw-gradient-to-position)}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-200:hover{--tw-bg-opacity:1;background-color:rgb(199 210 254 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.hover\:bg-teal-800:hover{--tw-bg-opacity:1;background-color:rgb(17 94 89 / var(--tw-bg-opacity, 1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:text-indigo-400:hover{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.hover\:text-red-600:hover{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.hover\:text-slate-600:hover{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.hover\:text-slate-800:hover{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.hover\:text-green-500:hover{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.hover\:text-indigo-500:hover{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.hover\:text-red-400:hover{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.hover\:shadow-sm:hover{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-indigo-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(99 102 241 / var(--tw-ring-opacity, 1))}.focus\:ring-teal-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(20 184 166 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-indigo-200{--tw-border-opacity:1;border-color:rgb(199 210 254 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-pink-200{--tw-border-opacity:1;border-color:rgb(251 207 232 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-purple-200{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-teal-200{--tw-border-opacity:1;border-color:rgb(153 246 228 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:border-yellow-200{--tw-border-opacity:1;border-color:rgb(254 240 138 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-indigo-500{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-pink-500{--tw-bg-opacity:1;background-color:rgb(236 72 153 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-teal-500{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-pink-600{--tw-bg-opacity:1;background-color:rgb(219 39 119 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-slate-600{--tw-bg-opacity:1;background-color:rgb(71 85 105 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-teal-600{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:bg-yellow-600{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity, 1))}.group.active-phase .group-\[\.active-phase\]\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:order-1{order:1}.md\:col-span-2{grid-column:span 2 / span 2}.md\:mb-0{margin-bottom:0px}.md\:w-1\/3{width:33.333333%}.md\:w-\[calc\(50\%-2\.5rem\)\]{width:calc(50% - 2.5rem)}.md\:max-w-md{max-width:28rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:flex-row-reverse{flex-direction:row-reverse}.md\:justify-normal{justify-content:normal}.md\:p-8{padding:2rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:before\:mx-auto::before{content:var(--tw-content);margin-left:auto;margin-right:auto}.md\:before\:translate-x-0::before{content:var(--tw-content);--tw-translate-x:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:nth-child(odd) .md\:group-odd\:-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:nth-child(even) .md\:group-even\:translate-x-1\/2{--tw-translate-x:50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}}@media (min-width: 1024px){.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body class="antialiased relative">
+
+    <!-- Header / Hero -->
+    <header class="krishna-gradient text-white relative overflow-hidden">
+        <!-- Abstract Decoration -->
+        <div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" d="M45.7,-76.3C58.9,-69.3,69.1,-55.6,76.3,-41.2C83.5,-26.8,87.6,-11.7,85.2,2.4C82.8,16.5,73.9,29.6,63.6,40.6C53.3,51.6,41.6,60.5,29.1,66.3C16.6,72.1,3.3,74.8,-9.3,73.5C-21.9,72.2,-33.8,66.9,-44.6,58.8C-55.4,50.7,-65.1,39.8,-71.4,27.1C-77.7,14.4,-80.6,-0.1,-77.1,-13.3C-73.6,-26.5,-63.7,-38.4,-51.9,-45.9C-40.1,-53.4,-26.4,-56.5,-12.9,-58.3C0.6,-60.1,14.1,-60.6,32.5,-83.3L45.7,-76.3Z" transform="translate(100 100)"></path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 py-16 relative z-10 text-center">
+            <div class="flex justify-center mb-4">
+                <!-- Flute Icon (SVG) -->
+                <svg class="w-12 h-12 text-yellow-400 float-anim" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 3-2 3-2zm0 0v-6.241l1.9-3.9 5.8 4.2"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9l-3 3m0 0l-3-3m3 3V3"></path> 
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-wide text-yellow-100">The Divine Trader</h1>
+            <p class="text-xl md:text-2xl font-light text-pink-100 italic mb-8">"Intellect of Krishna, Heart of Radha"</p>
+            <div class="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                <p class="text-sm md:text-base leading-relaxed">
+                    "You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty."
+                </p>
+                <p class="mt-2 text-right text-xs uppercase tracking-widest text-yellow-300">— Bhagavad Gita 2.47</p>
+            </div>
+            <div id="currentTime" class="mt-8 text-yellow-200 font-mono text-sm tracking-widest uppercase">Current Time: 06:06 PM</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+
+        <!-- Status Bar -->
+        <div id="status-bar" class="mb-12 text-center">
+            <span class="inline-block px-4 py-1 rounded-full bg-yellow-100 text-yellow-800 text-sm font-semibold border border-yellow-200 shadow-sm">
+                Current Phase: <span id="current-phase-name" class="font-bold text-indigo-900">Review &amp; Family</span>
+            </span>
+        </div>
+
+        <!-- NEW SECTION: Daily Sadhana & 24H Tracker -->
+        <section class="mb-16 bg-white rounded-xl card-shadow p-6 md:p-8 border-t-4 border-teal-600">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-slate-800 divine-font mb-4 md:mb-0">Daily Sadhana &amp; Discipline</h2>
+                
+                <!-- 24 Hour Progress Widget -->
+                <div class="w-full md:w-1/3">
+                    <div class="flex justify-between text-xs text-slate-500 mb-1 font-mono">
+                        <span>00:00</span>
+                        <span>12:00</span>
+                        <span>23:59</span>
+                    </div>
+                    <div class="h-4 bg-slate-100 rounded-full overflow-hidden border border-slate-200 relative" title="24 Hour Cycle">
+                        <div id="day-progress-bar" class="h-full bg-gradient-to-r from-blue-900 via-teal-500 to-yellow-500 transition-all duration-1000" style="width: 75.4167%;"></div>
+                        <!-- Current Time Marker -->
+                        <div id="day-progress-marker" class="absolute top-0 w-1 h-full bg-red-500 shadow-sm" style="left: 75.4167%;"></div>
+                    </div>
+                    <p class="text-center text-xs text-slate-400 mt-1">24-Hour Cycle Progress</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Discipline Checklist -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex gap-2 mb-4">
+                        <input type="text" id="new-todo-input" placeholder="Add a discipline exercise..." class="flex-1 border border-slate-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm">
+                        <button onclick="addTodo()" class="bg-teal-700 hover:bg-teal-800 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">Add</button>
+                    </div>
+
+                    <ul id="todo-list" class="space-y-3 max-h-64 overflow-y-auto pr-2"><li class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-100 transition hover:bg-white hover:shadow-sm">
+                    <label class="flex items-center space-x-3 cursor-pointer checkbox-wrapper flex-1">
+                        <div class="relative">
+                            <input type="checkbox" class="sr-only" checked="" onchange="toggleTodo(1)">
+                            <div class="w-5 h-5 border-2 border-slate-300 rounded transition-colors flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-sm text-slate-400 line-through decoration-teal-500">Morning Meditation (10 mins)</span>
+                    </label>
+                    <button onclick="deleteTodo(1)" class="text-slate-300 hover:text-red-400 ml-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </button>
+                </li><li class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-100 transition hover:bg-white hover:shadow-sm">
+                    <label class="flex items-center space-x-3 cursor-pointer checkbox-wrapper flex-1">
+                        <div class="relative">
+                            <input type="checkbox" class="sr-only" checked="" onchange="toggleTodo(2)">
+                            <div class="w-5 h-5 border-2 border-slate-300 rounded transition-colors flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-sm text-slate-400 line-through decoration-teal-500">Read Global News Neutrality</span>
+                    </label>
+                    <button onclick="deleteTodo(2)" class="text-slate-300 hover:text-red-400 ml-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </button>
+                </li><li class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-100 transition hover:bg-white hover:shadow-sm">
+                    <label class="flex items-center space-x-3 cursor-pointer checkbox-wrapper flex-1">
+                        <div class="relative">
+                            <input type="checkbox" class="sr-only" checked="" onchange="toggleTodo(3)">
+                            <div class="w-5 h-5 border-2 border-slate-300 rounded transition-colors flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-sm text-slate-400 line-through decoration-teal-500">Mark Support/Resistance Levels</span>
+                    </label>
+                    <button onclick="deleteTodo(3)" class="text-slate-300 hover:text-red-400 ml-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </button>
+                </li><li class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-100 transition hover:bg-white hover:shadow-sm">
+                    <label class="flex items-center space-x-3 cursor-pointer checkbox-wrapper flex-1">
+                        <div class="relative">
+                            <input type="checkbox" class="sr-only" checked="" onchange="toggleTodo(4)">
+                            <div class="w-5 h-5 border-2 border-slate-300 rounded transition-colors flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-sm text-slate-400 line-through decoration-teal-500">No Impulse Trades (Discipline)</span>
+                    </label>
+                    <button onclick="deleteTodo(4)" class="text-slate-300 hover:text-red-400 ml-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </button>
+                </li><li class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-100 transition hover:bg-white hover:shadow-sm">
+                    <label class="flex items-center space-x-3 cursor-pointer checkbox-wrapper flex-1">
+                        <div class="relative">
+                            <input type="checkbox" class="sr-only" onchange="toggleTodo(5)">
+                            <div class="w-5 h-5 border-2 border-slate-300 rounded transition-colors flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-sm text-slate-700">Accepted Stop Loss Gracefully</span>
+                    </label>
+                    <button onclick="deleteTodo(5)" class="text-slate-300 hover:text-red-400 ml-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </button>
+                </li><li class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-100 transition hover:bg-white hover:shadow-sm">
+                    <label class="flex items-center space-x-3 cursor-pointer checkbox-wrapper flex-1">
+                        <div class="relative">
+                            <input type="checkbox" class="sr-only" onchange="toggleTodo(6)">
+                            <div class="w-5 h-5 border-2 border-slate-300 rounded transition-colors flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-sm text-slate-700">Evening Journaling (Self-Inquiry)</span>
+                    </label>
+                    <button onclick="deleteTodo(6)" class="text-slate-300 hover:text-red-400 ml-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </button>
+                </li></ul>
+                </div>
+
+                <!-- Daily Stats -->
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-100 flex flex-col justify-center items-center text-center">
+                    <h3 class="text-lg font-bold text-slate-700 divine-font mb-4">Sadhana Completion</h3>
+                    
+                    <div class="relative w-32 h-32 mb-4">
+                        <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <!-- Background Circle -->
+                            <path class="text-slate-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+                            <!-- Progress Circle -->
+                            <path id="circle-progress" class="text-teal-600 transition-all duration-1000 ease-out" stroke-dasharray="67, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span id="completion-text" class="text-2xl font-bold text-slate-700">67%</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm text-slate-500 italic mb-4">"Action is thy duty, reward is not thy concern."</p>
+                    <button onclick="resetTodos()" class="text-xs text-red-400 hover:text-red-600 underline">Reset Tasks</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 24 Hour Routine Timeline -->
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold text-slate-800 divine-font">The 24-Hour Divine Cycle</h2>
+            <div class="flex gap-2">
+                <button onclick="resetRoutineToDefault()" class="text-xs text-slate-400 hover:text-slate-600 underline mr-2">Reset Default</button>
+                <button onclick="toggleEditMode()" id="edit-mode-btn" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-800 px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                    Edit Schedule
+                </button>
+            </div>
+        </div>
+
+        <div id="timeline-container" class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                <div class="relative flex items-center justify-between md:justify-normal group is-phase" data-id="1" data-start="05:00" data-end="06:30">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-indigo-500 group-[.active-phase]:bg-indigo-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-indigo-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">05:00 – 06:30</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">The Awakening</h3>
+                                <p class="text-sm text-slate-500 italic">Brahma Muhurta</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(1)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(1, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">✿ Rise with Gratitude (Radha Bhav)</li><li class="flex items-start gap-2 text-sm text-slate-700">✿ Meditation (Charioteer): 15 mins silence</li><li class="flex items-start gap-2 text-sm text-slate-700">✿ Movement: Yoga or Walk</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:flex-row-reverse group is-phase" data-id="2" data-start="06:30" data-end="07:30">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-blue-500 group-[.active-phase]:bg-blue-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-blue-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">06:30 – 07:30</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Study &amp; Learning</h3>
+                                <p class="text-sm text-slate-500 italic">Swadhyaya - Self Study</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(2)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(2, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">☀ Read Trading Books</li><li class="flex items-start gap-2 text-sm text-slate-700">☀ Review Charts (Yesterday)</li><li class="flex items-start gap-2 text-sm text-slate-700">☀ Learn New Concepts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal group is-phase" data-id="3" data-start="07:30" data-end="08:45">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-indigo-500 group-[.active-phase]:bg-indigo-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-indigo-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">07:30 – 08:45</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Pre-Market Prep</h3>
+                                <p class="text-sm text-slate-500 italic">Sanjaya’s Vision</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(3)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(3, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">✦ Jnana Yoga: Neutral Analysis</li><li class="flex items-start gap-2 text-sm text-slate-700">✦ Mark Levels (Support/Resistance)</li><li class="flex items-start gap-2 text-sm text-slate-700">✦ The Vow: See reality as it is</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:flex-row-reverse group is-phase" data-id="4" data-start="09:15" data-end="15:30">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-red-500 group-[.active-phase]:bg-red-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-red-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-red-600 uppercase tracking-wider">09:15 – 15:30</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Market Hours (The Kurukshetra)</h3>
+                                <p class="text-sm text-slate-500 italic">Action Without Attachment</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(4)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(4, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">⚔ Execute Strategy (Dharma)</li><li class="flex items-start gap-2 text-sm text-slate-700">⚔ Respect Stop Loss (Shield)</li><li class="flex items-start gap-2 text-sm text-slate-700">♥ Radha Filter: No Anxiety/Greed</li><li class="flex items-start gap-2 text-sm text-slate-700">☘ 12:00-12:30: Lunch/Pause (Satvik Food)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal group is-phase" data-id="5" data-start="15:30" data-end="16:00">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-purple-500 group-[.active-phase]:bg-purple-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-purple-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">15:30 – 16:00</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Market Close Ritual</h3>
+                                <p class="text-sm text-slate-500 italic">Krishnarpanam</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(5)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(5, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">⚛ Offer Profits/Losses to the Divine</li><li class="flex items-start gap-2 text-sm text-slate-700">⚛ Close Terminal</li><li class="flex items-start gap-2 text-sm text-slate-700">⚛ Breathe</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:flex-row-reverse group is-phase" data-id="6" data-start="16:00" data-end="18:00">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-teal-500 group-[.active-phase]:bg-teal-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-teal-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">16:00 – 18:00</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Karma Yoga (Work/Business)</h3>
+                                <p class="text-sm text-slate-500 italic">Duty Beyond Markets</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(6)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(6, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">⚒ Deep Work block for Job/Business</li><li class="flex items-start gap-2 text-sm text-slate-700">⚒ Creative Projects</li><li class="flex items-start gap-2 text-sm text-slate-700">⚒ Admin tasks</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal group is-phase active-phase" data-id="7" data-start="18:00" data-end="20:00">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-yellow-500 group-[.active-phase]:bg-yellow-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-yellow-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-yellow-600 uppercase tracking-wider">18:00 – 20:00</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Review &amp; Family</h3>
+                                <p class="text-sm text-slate-500 italic">Returning to Source</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(7)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(7, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">✎ Journal Trades (Did I follow rules?)</li><li class="flex items-start gap-2 text-sm text-slate-700">❤ Quality time with family</li><li class="flex items-start gap-2 text-sm text-slate-700">❤ Light Dinner</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:flex-row-reverse group is-phase" data-id="8" data-start="20:00" data-end="21:30">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-pink-500 group-[.active-phase]:bg-pink-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 3-2 3-2zm0 0v-6.241l1.9-3.9 5.8 4.2"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-pink-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-pink-600 uppercase tracking-wider">20:00 – 21:30</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Leisure &amp; Wisdom</h3>
+                                <p class="text-sm text-slate-500 italic">Satsang</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(8)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(8, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">♫ Music / Reading</li><li class="flex items-start gap-2 text-sm text-slate-700">♫ Light conversation</li><li class="flex items-start gap-2 text-sm text-slate-700">♫ Preparing for rest</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative flex items-center justify-between md:justify-normal group is-phase" data-id="9" data-start="21:30" data-end="05:00">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-slate-500 group-[.active-phase]:bg-slate-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-slate-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">21:30 – 05:00</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">Sleep (Yoga Nidra)</h3>
+                                <p class="text-sm text-slate-500 italic">Restoring the Temple</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(9)" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(9, this)" class="text-slate-300 hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            <li class="flex items-start gap-2 text-sm text-slate-700">☾ No screens 30 mins before bed</li><li class="flex items-start gap-2 text-sm text-slate-700">☾ Gratitude prayer</li><li class="flex items-start gap-2 text-sm text-slate-700">☾ Deep Rest</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+        <!-- The 5 Sutras -->
+        <div class="mt-20">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-10 divine-font">The 5 Sutras of the Divine Trader</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Sutra 1 -->
+                <div class="bg-white p-6 rounded-lg border-t-4 border-blue-800 card-shadow hover:-translate-y-1 transition duration-300">
+                    <h4 class="text-lg font-bold text-blue-900 mb-2">1. Nishkama Karma</h4>
+                    <p class="text-slate-600 text-sm">Trade the setup, not the P&amp;L. Focus on the quality of execution.</p>
+                </div>
+                <!-- Sutra 2 -->
+                <div class="bg-white p-6 rounded-lg border-t-4 border-pink-400 card-shadow hover:-translate-y-1 transition duration-300">
+                    <h4 class="text-lg font-bold text-pink-700 mb-2">2. Samatvam</h4>
+                    <p class="text-slate-600 text-sm">Equanimity. Treat a Stop-Loss and a Take-Profit with the same facial expression.</p>
+                </div>
+                <!-- Sutra 3 -->
+                <div class="bg-white p-6 rounded-lg border-t-4 border-yellow-500 card-shadow hover:-translate-y-1 transition duration-300">
+                    <h4 class="text-lg font-bold text-yellow-700 mb-2">3. Vairagya</h4>
+                    <p class="text-slate-600 text-sm">Detachment. Do not revenge trade. It is the ocean; you are just a boat.</p>
+                </div>
+                <!-- Sutra 4 -->
+                <div class="bg-white p-6 rounded-lg border-t-4 border-indigo-600 card-shadow hover:-translate-y-1 transition duration-300">
+                    <h4 class="text-lg font-bold text-indigo-800 mb-2">4. Ekagrata</h4>
+                    <p class="text-slate-600 text-sm">One-pointed focus. Like Arjuna, see nothing but the price action.</p>
+                </div>
+                <!-- Sutra 5 -->
+                <div class="bg-white p-6 rounded-lg border-t-4 border-red-400 card-shadow hover:-translate-y-1 transition duration-300 md:col-span-2 lg:col-span-1">
+                    <h4 class="text-lg font-bold text-red-600 mb-2">5. Prema</h4>
+                    <p class="text-slate-600 text-sm">Love the process. When you love the art, discipline becomes easy.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-12 text-center relative overflow-hidden">
+         <div class="container mx-auto px-4 relative z-10">
+            <p class="font-serif italic text-lg mb-4 text-yellow-100">"Fix your mind on Me, be devoted to Me... having thus disciplined yourself, you shall come to Me."</p>
+            <p class="text-xs tracking-widest uppercase">The Divine Trader Protocol © 2023</p>
+        </div>
+        <div class="absolute bottom-0 w-full h-1 bg-gradient-to-r from-blue-900 via-pink-500 to-yellow-500"></div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast" class="toast">Action Completed</div>
+
+    <!-- Edit Modal -->
+    <div id="edit-modal" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-50">
+        <div class="modal-overlay absolute w-full h-full bg-slate-900 opacity-50"></div>
+        
+        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded-xl shadow-2xl z-50 overflow-y-auto border-t-4 border-yellow-500 transform transition-all scale-95" id="modal-content">
+            
+            <div class="modal-content py-4 text-left px-6">
+                <!-- Title -->
+                <div class="flex justify-between items-center pb-3 border-b border-slate-100">
+                    <p class="text-2xl font-bold text-indigo-900 divine-font">Edit Phase</p>
+                    <div class="modal-close cursor-pointer z-50" onclick="closeModal()">
+                        <svg class="fill-current text-slate-500 hover:text-slate-800" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Body -->
+                <div class="my-5 space-y-4">
+                    <input type="hidden" id="edit-id">
+                    <div>
+                        <label class="block text-slate-600 text-xs font-bold mb-1 uppercase">Title</label>
+                        <input id="edit-title" class="shadow appearance-none border rounded w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text">
+                    </div>
+                    <div>
+                        <label class="block text-slate-600 text-xs font-bold mb-1 uppercase">Subtitle / Theme</label>
+                        <input id="edit-subtitle" class="shadow appearance-none border rounded w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text">
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-1/2">
+                            <label class="block text-slate-600 text-xs font-bold mb-1 uppercase">Start Time</label>
+                            <input id="edit-start" class="shadow appearance-none border rounded w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" type="time">
+                        </div>
+                        <div class="w-1/2">
+                            <label class="block text-slate-600 text-xs font-bold mb-1 uppercase">End Time</label>
+                            <input id="edit-end" class="shadow appearance-none border rounded w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" type="time">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-slate-600 text-xs font-bold mb-1 uppercase">Description / Tasks</label>
+                        <textarea id="edit-desc" class="shadow appearance-none border rounded w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 h-24"></textarea>
+                        <p class="text-xs text-slate-400 mt-1">Separate specific bullet points with new lines.</p>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="flex justify-end pt-2">
+                    <button onclick="closeModal()" class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Cancel</button>
+                    <button onclick="savePhaseEdit()" class="modal-close px-6 bg-indigo-600 p-3 rounded-lg text-white hover:bg-indigo-700 shadow-lg">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* --- 1. DEFAULT DATA (The Divine Protocol) --- */
+        const defaultRoutineData = [
+            { 
+                id: 1, start: "05:00", end: "06:30", title: "The Awakening", subtitle: "Brahma Muhurta", 
+                desc: "✿ Rise with Gratitude (Radha Bhav)\n✿ Meditation (Charioteer): 15 mins silence\n✿ Movement: Yoga or Walk",
+                icon: "sun", color: "indigo"
+            },
+            { 
+                id: 2, start: "06:30", end: "07:30", title: "Study & Learning", subtitle: "Swadhyaya - Self Study", 
+                desc: "☀ Read Trading Books\n☀ Review Charts (Yesterday)\n☀ Learn New Concepts",
+                icon: "book", color: "blue"
+            },
+            { 
+                id: 3, start: "07:30", end: "08:45", title: "Pre-Market Prep", subtitle: "Sanjaya’s Vision", 
+                desc: "✦ Jnana Yoga: Neutral Analysis\n✦ Mark Levels (Support/Resistance)\n✦ The Vow: See reality as it is",
+                icon: "eye", color: "indigo"
+            },
+            { 
+                id: 4, start: "09:15", end: "15:30", title: "Market Hours (The Kurukshetra)", subtitle: "Action Without Attachment", 
+                desc: "⚔ Execute Strategy (Dharma)\n⚔ Respect Stop Loss (Shield)\n♥ Radha Filter: No Anxiety/Greed\n☘ 12:00-12:30: Lunch/Pause (Satvik Food)",
+                icon: "sword", color: "red"
+            },
+            { 
+                id: 5, start: "15:30", end: "16:00", title: "Market Close Ritual", subtitle: "Krishnarpanam", 
+                desc: "⚛ Offer Profits/Losses to the Divine\n⚛ Close Terminal\n⚛ Breathe",
+                icon: "offering", color: "purple"
+            },
+            { 
+                id: 6, start: "16:00", end: "18:00", title: "Karma Yoga (Work/Business)", subtitle: "Duty Beyond Markets", 
+                desc: "⚒ Deep Work block for Job/Business\n⚒ Creative Projects\n⚒ Admin tasks",
+                icon: "briefcase", color: "teal"
+            },
+            { 
+                id: 7, start: "18:00", end: "20:00", title: "Review & Family", subtitle: "Returning to Source", 
+                desc: "✎ Journal Trades (Did I follow rules?)\n❤ Quality time with family\n❤ Light Dinner",
+                icon: "heart", color: "yellow"
+            },
+            { 
+                id: 8, start: "20:00", end: "21:30", title: "Leisure & Wisdom", subtitle: "Satsang", 
+                desc: "♫ Music / Reading\n♫ Light conversation\n♫ Preparing for rest",
+                icon: "music", color: "pink"
+            },
+            { 
+                id: 9, start: "21:30", end: "05:00", title: "Sleep (Yoga Nidra)", subtitle: "Restoring the Temple", 
+                desc: "☾ No screens 30 mins before bed\n☾ Gratitude prayer\n☾ Deep Rest",
+                icon: "moon", color: "slate"
+            }
+        ];
+
+        /* --- 2. STATE MANAGEMENT --- */
+        let routineData = JSON.parse(localStorage.getItem('divineRoutineData')) || JSON.parse(JSON.stringify(defaultRoutineData));
+        
+        // Track completed phases for current day
+        let routineProgress = JSON.parse(localStorage.getItem('divineRoutineProgress')) || {};
+
+        /* --- 3. TOAST NOTIFICATION --- */
+        function showToast(message) {
+            const toast = document.getElementById("toast");
+            toast.textContent = message;
+            toast.className = "toast show";
+            setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+        }
+
+        function saveRoutine(notify = false) {
+            localStorage.setItem('divineRoutineData', JSON.stringify(routineData));
+            renderRoutine();
+            updateTimeAndPhase();
+            if(notify) showToast("Schedule Saved Successfully");
+        }
+
+        function resetRoutineToDefault() {
+            if(confirm("Reset schedule to default Divine Protocol?")) {
+                routineData = JSON.parse(JSON.stringify(defaultRoutineData));
+                saveRoutine(false);
+                showToast("Schedule Reset to Default");
+            }
+        }
+
+        /* --- 4. RENDERING --- */
+        function getIcon(name) {
+            const icons = {
+                sun: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>',
+                eye: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>',
+                sword: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>',
+                offering: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>',
+                heart: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>',
+                book: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>',
+                briefcase: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>',
+                music: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 3-2 3-2zm0 0v-6.241l1.9-3.9 5.8 4.2"></path>',
+                moon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>'
+            };
+            return icons[name] || icons['sun'];
+        }
+
+        function renderRoutine() {
+            const container = document.getElementById('timeline-container');
+            container.innerHTML = '';
+
+            routineData.forEach((phase, index) => {
+                const isOdd = index % 2 !== 0;
+                const isCompleted = routineProgress[phase.id];
+                
+                const descLines = phase.desc.split('\n').map(line => {
+                    return `<li class="flex items-start gap-2 text-sm text-slate-700">${line}</li>`;
+                }).join('');
+
+                const html = `
+                <div class="relative flex items-center justify-between md:justify-normal ${isOdd ? 'md:flex-row-reverse' : ''} group is-phase" 
+                     data-id="${phase.id}" data-start="${phase.start}" data-end="${phase.end}">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-slate-200 
+                                group-hover:bg-${phase.color}-500 group-[.active-phase]:bg-${phase.color}-600 transition shadow shrink-0 
+                                md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 
+                                text-slate-500 group-hover:text-white group-[.active-phase]:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            ${getIcon(phase.icon)}
+                        </svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white rounded-lg card-shadow border border-slate-100 relative group-hover:border-${phase.color}-200 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="text-xs font-bold text-${phase.color}-600 uppercase tracking-wider">${phase.start} – ${phase.end}</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1 divine-font">${phase.title}</h3>
+                                <p class="text-sm text-slate-500 italic">${phase.subtitle}</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="openEditModal(${phase.id})" class="text-slate-200 hover:text-indigo-500 transition focus:outline-none" title="Edit This Phase">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                </button>
+                                <button onclick="togglePhaseComplete(${phase.id}, this)" class="${isCompleted ? 'text-green-500' : 'text-slate-300'} hover:text-green-500 transition focus:outline-none" title="Mark Complete">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="space-y-1 mt-4">
+                            ${descLines}
+                        </ul>
+                    </div>
+                </div>
+                `;
+                container.innerHTML += html;
+            });
+            updateTimeAndPhase(); 
+        }
+
+        /* --- 5. EDIT LOGIC --- */
+        function toggleEditMode() {
+            showToast("Click the pencil icon on any card to edit that phase.");
+        }
+
+        function openEditModal(id) {
+            const phase = routineData.find(p => p.id === id);
+            if (!phase) return;
+
+            document.getElementById('edit-id').value = phase.id;
+            document.getElementById('edit-title').value = phase.title;
+            document.getElementById('edit-subtitle').value = phase.subtitle;
+            document.getElementById('edit-start').value = phase.start;
+            document.getElementById('edit-end').value = phase.end;
+            document.getElementById('edit-desc').value = phase.desc;
+
+            const modal = document.getElementById('edit-modal');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.classList.add('modal-active');
+            
+            document.getElementById('modal-content').classList.remove('scale-95');
+            document.getElementById('modal-content').classList.add('scale-100');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('edit-modal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            document.body.classList.remove('modal-active');
+            
+            document.getElementById('modal-content').classList.add('scale-95');
+            document.getElementById('modal-content').classList.remove('scale-100');
+        }
+
+        function savePhaseEdit() {
+            const id = parseInt(document.getElementById('edit-id').value);
+            const title = document.getElementById('edit-title').value;
+            const subtitle = document.getElementById('edit-subtitle').value;
+            const start = document.getElementById('edit-start').value;
+            const end = document.getElementById('edit-end').value;
+            const desc = document.getElementById('edit-desc').value;
+
+            const index = routineData.findIndex(p => p.id === id);
+            if (index !== -1) {
+                routineData[index] = { ...routineData[index], title, subtitle, start, end, desc };
+                saveRoutine(true); // Notify
+                closeModal();
+            }
+        }
+
+        function togglePhaseComplete(id, btn) {
+            routineProgress[id] = !routineProgress[id];
+            localStorage.setItem('divineRoutineProgress', JSON.stringify(routineProgress));
+            renderRoutine();
+            if(routineProgress[id]) showToast("Phase Completed!");
+        }
+
+        /* --- 6. TIME AND PHASE LOGIC --- */
+        function updateTimeAndPhase() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            document.getElementById('currentTime').textContent = "Current Time: " + timeString;
+
+            const currentMinutes = now.getHours() * 60 + now.getMinutes();
+            const totalDayMinutes = 24 * 60;
+            const progressPercent = (currentMinutes / totalDayMinutes) * 100;
+
+            document.getElementById('day-progress-bar').style.width = progressPercent + '%';
+            document.getElementById('day-progress-marker').style.left = progressPercent + '%';
+            
+            const phases = document.querySelectorAll('.is-phase');
+            let activeFound = false;
+
+            phases.forEach(phaseEl => {
+                const startParts = phaseEl.dataset.start.split(':');
+                const endParts = phaseEl.dataset.end.split(':');
+                
+                let startMinutes = parseInt(startParts[0]) * 60 + parseInt(startParts[1]);
+                let endMinutes = parseInt(endParts[0]) * 60 + parseInt(endParts[1]);
+
+                let isCurrent = false;
+                if (endMinutes < startMinutes) {
+                    if (currentMinutes >= startMinutes || currentMinutes < endMinutes) {
+                        isCurrent = true;
+                    }
+                } else {
+                    if (currentMinutes >= startMinutes && currentMinutes < endMinutes) {
+                        isCurrent = true;
+                    }
+                }
+
+                phaseEl.classList.remove('active-phase');
+                
+                if (isCurrent) {
+                    phaseEl.classList.add('active-phase');
+                    document.getElementById('status-bar').classList.remove('hidden');
+                    document.getElementById('current-phase-name').textContent = phaseEl.querySelector('h3').textContent;
+                    activeFound = true;
+                }
+            });
+
+            if (!activeFound) document.getElementById('status-bar').classList.add('hidden');
+        }
+
+        /* --- 7. TODO LIST LOGIC --- */
+        let todos = JSON.parse(localStorage.getItem('divineTraderTodos')) || [
+            { id: 1, text: "Morning Meditation (10 mins)", completed: false },
+            { id: 2, text: "Read Global News Neutrality", completed: false },
+            { id: 3, text: "Mark Support/Resistance Levels", completed: false },
+            { id: 4, text: "No Impulse Trades (Discipline)", completed: false },
+            { id: 5, text: "Accepted Stop Loss Gracefully", completed: false },
+            { id: 6, text: "Evening Journaling (Self-Inquiry)", completed: false }
+        ];
+
+        function renderTodos() {
+            const list = document.getElementById('todo-list');
+            list.innerHTML = '';
+            let completedCount = 0;
+            todos.forEach(todo => {
+                if(todo.completed) completedCount++;
+                const li = document.createElement('li');
+                li.className = "flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-100 transition hover:bg-white hover:shadow-sm";
+                li.innerHTML = `
+                    <label class="flex items-center space-x-3 cursor-pointer checkbox-wrapper flex-1">
+                        <div class="relative">
+                            <input type="checkbox" class="sr-only" ${todo.completed ? 'checked' : ''} onchange="toggleTodo(${todo.id})">
+                            <div class="w-5 h-5 border-2 border-slate-300 rounded transition-colors flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                        </div>
+                        <span class="text-sm ${todo.completed ? 'text-slate-400 line-through decoration-teal-500' : 'text-slate-700'}">${todo.text}</span>
+                    </label>
+                    <button onclick="deleteTodo(${todo.id})" class="text-slate-300 hover:text-red-400 ml-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </button>
+                `;
+                list.appendChild(li);
+            });
+            updateProgress(completedCount);
+            saveTodos();
+        }
+
+        function addTodo() {
+            const input = document.getElementById('new-todo-input');
+            const text = input.value.trim();
+            if (text) {
+                todos.push({ id: Date.now(), text: text, completed: false });
+                input.value = '';
+                renderTodos();
+                showToast("Task Added");
+            }
+        }
+        function toggleTodo(id) { 
+            todos = todos.map(t => t.id === id ? { ...t, completed: !t.completed } : t); 
+            renderTodos(); 
+        }
+        function deleteTodo(id) { 
+            todos = todos.filter(t => t.id !== id); 
+            renderTodos(); 
+            showToast("Task Removed");
+        }
+        function resetTodos() { 
+            if(confirm("Start a new day? This will reset all tasks.")) { 
+                todos = todos.map(t => ({ ...t, completed: false })); 
+                renderTodos();
+                showToast("New Day Started!");
+            }
+        }
+        function updateProgress(count) {
+            const total = todos.length;
+            const percent = total === 0 ? 0 : Math.round((count / total) * 100);
+            document.getElementById('circle-progress').setAttribute('stroke-dasharray', `${percent}, 100`);
+            document.getElementById('completion-text').textContent = `${percent}%`;
+        }
+        function saveTodos() { localStorage.setItem('divineTraderTodos', JSON.stringify(todos)); }
+
+        // Initialize App
+        renderRoutine(); 
+        renderTodos();
+        updateTimeAndPhase();
+        setInterval(updateTimeAndPhase, 60000);
+
+        document.getElementById('new-todo-input').addEventListener('keypress', function (e) { if (e.key === 'Enter') addTodo(); });
+    </script>
+
+</body></html>
